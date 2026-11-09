@@ -1,0 +1,507 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodiversidad y Contabilidad Ambiental</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f7f0;
+            color: #26352b;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #123d2a;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #b5e48c;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #b5e48c;
+        }
+
+        .portada {
+            min-height: 480px;
+            background:
+                linear-gradient(rgba(0,40,20,.72), rgba(0,40,20,.72)),
+                url("https://images.unsplash.com/photo-1448375240586-882707db888b");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .portada h1 {
+            font-size: 43px;
+            margin-bottom: 20px;
+        }
+
+        .portada p {
+            font-size: 19px;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .boton {
+            display: inline-block;
+            background: #80b918;
+            color: white;
+            padding: 12px 25px;
+            margin-top: 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .boton:hover {
+            background: #568c0b;
+        }
+
+        section {
+            padding: 65px 9%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #23613c;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .introduccion {
+            text-align: center;
+            max-width: 950px;
+            margin: auto;
+        }
+
+        .tarjetas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .tarjeta {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,.09);
+            transition: transform .3s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-7px);
+        }
+
+        .tarjeta h3 {
+            color: #347a45;
+            margin-bottom: 12px;
+        }
+
+        .tarjeta img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 9px;
+            margin-bottom: 15px;
+        }
+
+        .fondo-verde {
+            background: #e1eedb;
+        }
+
+        .impactos {
+            background: #fff;
+        }
+
+        .conclusion {
+            background: #164b32;
+            color: white;
+            text-align: center;
+        }
+
+        .conclusion h2 {
+            color: #b5e48c;
+        }
+
+        .conclusion p {
+            max-width: 900px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+        .reflexion {
+            background: #d5eacb;
+            border-left: 6px solid #39844c;
+            padding: 25px;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: #102d20;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        @media(max-width: 700px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav {
+                margin-top: 12px;
+            }
+
+            nav a {
+                display: inline-block;
+                font-size: 13px;
+            }
+
+            .portada h1 {
+                font-size: 30px;
+            }
+
+            section {
+                padding: 45px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h2>🌿 EcoContabilidad</h2>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#biodiversidad">Biodiversidad</a>
+            <a href="#contabilidad">Contabilidad</a>
+            <a href="#impactos">Impactos</a>
+            <a href="#conclusion">Conclusión</a>
+        </nav>
+    </header>
+
+    <!-- PORTADA -->
+    <div class="portada" id="inicio">
+        <div>
+            <h1>La Biodiversidad como Capital Natural</h1>
+
+            <p>
+                La riqueza natural del Ecuador representa un patrimonio
+                invaluable que debemos proteger mediante la educación,
+                la tecnología y la contabilidad ambiental.
+            </p>
+
+            <a href="#biodiversidad" class="boton">
+                Conocer más
+            </a>
+        </div>
+    </div>
+
+    <!-- INTRODUCCIÓN -->
+    <section id="biodiversidad">
+        <h2>🌎 Ecuador: Un país megadiverso</h2>
+
+        <div class="introduccion">
+            <p>
+                Ecuador es uno de los países más biodiversos del planeta.
+                A pesar de su pequeño territorio, posee una enorme variedad
+                de especies animales y vegetales, ecosistemas y recursos
+                naturales. Su riqueza se encuentra en cuatro regiones:
+                Costa, Sierra, Amazonía y Galápagos.
+            </p>
+
+            <p>
+                Esta biodiversidad constituye un capital natural porque
+                proporciona alimentos, agua, materias primas, medicinas,
+                turismo y servicios ambientales indispensables para
+                la vida y el desarrollo económico del país.
+            </p>
+        </div>
+
+        <div class="tarjetas">
+
+            <div class="tarjeta">
+                <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5"
+                     alt="Bosque tropical">
+
+                <h3>🌳 Amazonía</h3>
+
+                <p>
+                    Alberga una gran variedad de plantas, animales y
+                    ecosistemas que ayudan a regular el clima y conservar
+                    el agua.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027"
+                     alt="Animales silvestres">
+
+                <h3>🐆 Fauna ecuatoriana</h3>
+
+                <p>
+                    Ecuador posee especies emblemáticas como el jaguar,
+                    el cóndor andino, los monos y numerosas especies
+                    endémicas.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e"
+                     alt="Paisaje natural">
+
+                <h3>🏞️ Ecosistemas</h3>
+
+                <p>
+                    Sus páramos, manglares, bosques y ecosistemas marinos
+                    mantienen el equilibrio ecológico.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTABILIDAD AMBIENTAL -->
+    <section class="fondo-verde" id="contabilidad">
+
+        <h2>📊 ¿Qué es la contabilidad ambiental?</h2>
+
+        <div class="introduccion">
+            <p>
+                La contabilidad ambiental es una herramienta que permite
+                identificar, medir y evaluar los costos y beneficios
+                relacionados con el medio ambiente dentro de las
+                actividades económicas de una organización o país.
+            </p>
+
+            <p>
+                Su objetivo es integrar la información ambiental con
+                la información financiera para tomar decisiones
+                responsables y promover un desarrollo sostenible.
+            </p>
+        </div>
+
+        <div class="tarjetas">
+
+            <div class="tarjeta">
+                <h3>💰 Valoración ambiental</h3>
+                <p>
+                    Permite reconocer el valor económico de los recursos
+                    naturales y los servicios que ofrecen los ecosistemas.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>🌱 Gestión sostenible</h3>
+                <p>
+                    Ayuda a las empresas a reducir sus impactos ambientales
+                    y utilizar responsablemente los recursos naturales.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>📈 Toma de decisiones</h3>
+                <p>
+                    Facilita la elaboración de informes y presupuestos
+                    que consideran los efectos ambientales de las
+                    actividades económicas.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- IMPACTOS AMBIENTALES -->
+    <section class="impactos" id="impactos">
+
+        <h2>⚠️ Principales impactos ambientales en Ecuador</h2>
+
+        <div class="tarjetas">
+
+            <div class="tarjeta">
+                <h3>🌲 Deforestación</h3>
+                <p>
+                    La tala de árboles y la expansión agrícola destruyen
+                    hábitats naturales y amenazan la supervivencia
+                    de diferentes especies.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>⛏️ Minería</h3>
+                <p>
+                    Las actividades mineras sin controles adecuados
+                    pueden provocar contaminación del agua, degradación
+                    del suelo y pérdida de biodiversidad.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>🏭 Contaminación</h3>
+                <p>
+                    Los residuos industriales, plásticos y aguas
+                    contaminadas afectan los ecosistemas terrestres
+                    y acuáticos.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>🔥 Cambio climático</h3>
+                <p>
+                    Las alteraciones del clima afectan los ecosistemas,
+                    la disponibilidad de agua y la distribución de
+                    muchas especies.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SOLUCIONES -->
+    <section class="fondo-verde">
+
+        <h2>🌱 ¿Cómo podemos proteger la biodiversidad?</h2>
+
+        <div class="introduccion">
+            <p>
+                La conservación ambiental necesita la participación
+                de ciudadanos, empresas, instituciones educativas
+                y profesionales de diferentes áreas.
+            </p>
+        </div>
+
+        <div class="tarjetas">
+
+            <div class="tarjeta">
+                <h3>♻️ Reciclaje</h3>
+                <p>
+                    Reducir los residuos y fomentar el reciclaje
+                    para disminuir la contaminación.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>🌳 Reforestación</h3>
+                <p>
+                    Recuperar los bosques y proteger las áreas naturales
+                    afectadas por la deforestación.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>📚 Educación ambiental</h3>
+                <p>
+                    Promover conocimientos y hábitos responsables
+                    para cuidar los recursos naturales.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>💻 Tecnología sostenible</h3>
+                <p>
+                    Utilizar herramientas digitales para monitorear
+                    ecosistemas, controlar la contaminación y
+                    administrar información ambiental.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONCLUSIÓN -->
+    <section class="conclusion" id="conclusion">
+
+        <h2>💻 El papel del Ingeniero en Sistemas</h2>
+
+        <p>
+            ¿Puede un Ingeniero en Sistemas contribuir a la conservación
+            de la biodiversidad del Ecuador desde su ejercicio profesional?
+        </p>
+
+        <div class="reflexion">
+            <p>
+                ¡Por supuesto! Un Ingeniero en Sistemas puede contribuir
+                significativamente a la conservación de la biodiversidad
+                mediante el desarrollo de aplicaciones, plataformas web,
+                sistemas de información geográfica y bases de datos que
+                permitan monitorear los recursos naturales.
+            </p>
+
+            <br>
+
+            <p>
+                También puede diseñar sistemas para controlar los niveles
+                de contaminación, gestionar residuos, analizar información
+                ambiental y facilitar la contabilidad de los recursos
+                naturales. De esta manera, la tecnología se convierte
+                en una aliada de la sostenibilidad.
+            </p>
+
+            <br>
+
+            <p>
+                En conclusión, considero que la biodiversidad ecuatoriana
+                debe ser reconocida como un capital natural de enorme
+                valor. Protegerla no solamente es responsabilidad de
+                las autoridades, sino también de los profesionales,
+                empresas y ciudadanos. La unión entre tecnología,
+                contabilidad y conciencia ambiental permitirá construir
+                un Ecuador más sostenible para las futuras generaciones.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <h3>🌎 EcoContabilidad Ecuador</h3>
+
+        <p>La naturaleza es nuestra mayor riqueza.</p>
+
+        <p>Proyecto académico: Biodiversidad y Contabilidad Ambiental</p>
+
+        <p>© 2026 - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
